@@ -58,7 +58,7 @@ nav a {
 
 #hero {
     height: 500px;
-    background: blue;
+    background: #0B318F;
 
     display: flex;
     flex-direction: column;
@@ -96,6 +96,14 @@ h2 {
     color: white;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.8;
+    /* 行間を広げて文字の重なりを防ぐ */
+    margin-bottom: 20px;
+    /* テキストの下側にも少し余白を作る */
 }
 
 /* Works */
@@ -126,7 +134,7 @@ h2 {
     display: block;
     margin-top: 30px;
     text-align: right;
-    color: blue;
+    color: #0B318F;
     font-weight: bold;
     text-decoration: none;
 }
@@ -143,66 +151,8 @@ footer {
     margin-top: 100px;
 }
 
-/* ---------- Responsive ---------- */
-
-@media (max-width:768px) {
-
-    header {
-        padding: 0 20px;
-    }
-
-    nav {
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background: white;
-
-        display: none;
-    }
-
-    nav.active {
-        display: block;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 0;
-        gap: 20px;
-    }
-
-    #menu-btn {
-        display: block;
-    }
-
-    #hero {
-        height: 450px;
-    }
-
-    #hero h1 {
-        font-size: 48px;
-    }
-
-    #hero p {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 42px;
-    }
-
-    .works-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .view-more {
-        text-align: center;
-    }
-}
-
 .page-title {
-    background: #1e1eff;
+    background: #0B318F;
     color: white;
     text-align: center;
     padding: 120px 20px;
@@ -298,7 +248,63 @@ footer {
     line-height: 1.8;
 }
 
-@media(max-width:768px) {
+
+/* ---------- Responsive ---------- */
+
+@media (max-width:768px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    #hero {
+        height: 450px;
+    }
+
+    #hero h1 {
+        font-size: 48px;
+    }
+
+    #hero p {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .view-more {
+        text-align: center;
+    }
 
     .about-container {
         flex-direction: column;
