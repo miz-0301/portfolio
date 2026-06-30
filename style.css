@@ -122,6 +122,12 @@ p {
     text-align: left;
 }
 
+.works-grid a,
+.works-grid a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
 .card img {
     width: 100%;
 }
