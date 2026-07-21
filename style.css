@@ -354,6 +354,7 @@ footer {
     #menu-btn {
         display: block;
         z-index: 1100;
+        margin-right: -16px;
     }
 
     #hero {
@@ -362,7 +363,8 @@ footer {
     }
 
     #hero h1 {
-        font-size: clamp(3rem, 10vw, 4.2rem);
+        font-size: clamp(2.4rem, 8vw, 4.2rem);
+        letter-spacing: 0.12em;
     }
 
     #hero p {
@@ -371,6 +373,10 @@ footer {
 
     section {
         padding: 60px 6%;
+    }
+
+    .page-title {
+        padding: 50px 20px;
     }
 
     h2 {
